@@ -1,0 +1,31 @@
+{
+  "name": "student_admission_form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "student-install": "npm intall --prefix student",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "student": "npm start --prefix student",
+    "dev": "concurrently \" npm run server\" \"npm run student\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-virus02:virus02/Student_Admission_Form.git"
+  },
+  "author": "Sharath Nayak",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.0.2",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.7"
+  }
+}
