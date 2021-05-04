@@ -16,13 +16,13 @@ const AppNavbar = (props) => {
 
     return (
         <div>
-            <Navbar color="light" light expand="md">
+            <Navbar color="light" light expand="sm" className="mb-5">
                 <Container>
                     <NavbarBrand href="#">Admission Form</NavbarBrand>
                     <NavbarToggler onClick={toggle}></NavbarToggler>
                     <Collapse isOpen={isOpen} navbar>
-                        <Nav className="mr-auto" navbar>
-                            <NavItem href="#">Github</NavItem>
+                        <Nav className="ml-auto" navbar>
+                            <NavItem href="#">Login</NavItem>
                         </Nav>
                     </Collapse>
                 </Container>
